@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 # The KubeRay community welcomes PRs to expose additional configuration
-# in this Helm chart.
+# in this Helm chart...
 
 image:
   repository: my-ray-sklearn
