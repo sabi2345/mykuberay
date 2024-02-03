@@ -8,7 +8,7 @@
 image:
   repository: my-ray-sklearn
   tag: 2.7.0
-  pullPolicy: IfNotPresent
+  pullPolicy: Never
 
 nameOverride: "kuberay"
 fullnameOverride: ""
