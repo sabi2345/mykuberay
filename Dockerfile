@@ -1,6 +1,5 @@
-# Dockerfile
-FROM rayproject/ray:latest
+# Use the rayproject/ray image as the base image
+FROM rayproject/ray:2.9.0
 
-# Set the working directory
-WORKDIR /app
-
+# Install sklearn
+RUN pip install -U scikit-learn ray[tune]
