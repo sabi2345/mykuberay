@@ -7,7 +7,7 @@
 
 image:
   repository: 628172178838.dkr.ecr.ap-northeast-1.amazonaws.com/ray-sklearn
-  tag: 2.9.0
+  tag: 2.9.0.a
   pullPolicy: IfNotPresent
   # repository: my-ray-sklearn
   # tag: 1.0.3
@@ -219,9 +219,8 @@ additionalWorkerGroups:
 
 # Configuration for Head's Kubernetes Service
 service:
-  # This is optional, and the default is ClusterIP.
   type: LoadBalancer
-  
+  # This is optional, and the default is ClusterIP.
   # type: ClusterIP
   # Optional, for the user to provide any additional fields to the service.
   # See https://pkg.go.dev/k8s.io/Kubernetes/pkg/api/v1#Service
