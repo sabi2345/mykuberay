@@ -220,7 +220,9 @@ additionalWorkerGroups:
 # Configuration for Head's Kubernetes Service
 service:
   # This is optional, and the default is ClusterIP.
-  type: ClusterIP
+  type: LoadBalancer
+  
+  # type: ClusterIP
   # Optional, for the user to provide any additional fields to the service.
   # See https://pkg.go.dev/k8s.io/Kubernetes/pkg/api/v1#Service
   headService: {}
